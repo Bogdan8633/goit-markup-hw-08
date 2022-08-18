@@ -139,21 +139,14 @@ p {
   color: var(--accent-color);
 }
 
-.main-nav {
-  position: relative;
-}
-
 .menu {
   display: flex;
   align-items: center;
 }
 
 .menu-button {
-  position: absolute;
   z-index: 2;
   top: 10px;
-  right: 0px;
-  transform: translate(-50%, -50%);
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -863,7 +856,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 
