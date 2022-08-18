@@ -3,7 +3,7 @@ body {
   font-size: var(--primary-font-size);
   color: var(--primery-color);
   font-family: var(--primery-font);
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
 }
 
 img {
@@ -12,7 +12,7 @@ img {
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 ul,
@@ -32,4 +32,3 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-

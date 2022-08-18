@@ -16,45 +16,72 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css"/> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--header-->
-    <header class="content">
+    <header class="page-header">
       <div class="container main-nav">
         <nav class="menu">
           <a class="logo" href="./index.html"><span class="accent">Web</span>Studio</a>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link menu__link--current">Студия</a>
-            </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link">Портфолио</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Контакты</a>
-            </li>
-          </ul>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40px" height="40px" aria-label="Преключатель мобильного меню">
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu-open"></use>
+              <use class="icon-cross" href="./images/sprite.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link menu__link--current">Студия</a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="menu__link">Портфолио</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="connection">
+              <li class="connection__item connection__item-first">
+                <a href="mailto:info@devstudio.com" class="connection__link">
+                  <svg class="connection__contact-icon" width="16px" height="12px">
+                    <use href="./images/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="connection__item connection__item-second">
+                <a href="tel+380961111111" class="connection__link">
+                  <svg class="connection__contact-icon" width="10px" height="16px">
+                    <use href="./images/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <ul class="header-social-list">
+              <li class="header-social-list__item">
+                <a href="#" class="header-social-list__link">Instagram</a>
+              </li>
+              <li class="header-social-list__item">
+                <a href="#" class="header-social-list__link">Twitter</a>
+              </li>
+              <li class="header-social-list__item">
+                <a href="#" class="header-social-list__link">Facebook</a>
+              </li>
+              <li class="header-social-list__item">
+                <a href="#" class="header-social-list__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <ul class="connection">
-          <li class="connection__item">
-            <a href="mailto:info@devstudio.com" class="connection__link">
-              <svg class="connection__contact-icon" width="16px" height="12px">
-                <use href="./images/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="connection__item">
-            <a href="tel+380961111111" class="connection__link">
-              <svg class="connection__contact-icon" width="10px" height="16px">
-                <use href="./images/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -171,13 +198,7 @@
           <h2 class="head-title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./images/igor_demyanenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <img class="team__photo" src="./images/igor_demyanenko.jpg" alt="Игорь Демьяненко" />
               <div class="team__card-information">
                 <h3 class="team__member">Игорь Демьяненко</h3>
                 <p lang="en" class="team__profession">Product Designer</p>
@@ -214,13 +235,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./images/olga_repina.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <img class="team__photo" src="./images/olga_repina.jpg" alt="Ольга Репина" />
               <div class="team__card-information">
                 <h3 class="team__member">Ольга Репина</h3>
                 <p lang="en" class="team__profession">Frontend Developer</p>
@@ -257,13 +272,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./images/nikolay_tarasov.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <img class="team__photo" src="./images/nikolay_tarasov.jpg" alt="Николай Тарасов" />
               <div class="team__card-information">
                 <h3 class="team__member">Николай Тарасов</h3>
                 <p lang="en" class="team__profession">Marketing</p>
@@ -300,13 +309,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./images/mihail_ermakov.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <img class="team__photo" src="./images/mihail_ermakov.jpg" alt="Михаил Ермаков" />
               <div class="team__card-information">
                 <h3 class="team__member">Михаил Ермаков</h3>
                 <p lang="en" class="team__profession">UI Designer</p>
@@ -534,5 +537,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
