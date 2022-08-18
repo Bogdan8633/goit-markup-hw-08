@@ -1,8 +1,18 @@
-// .total-footer-background {
-//     background-color: #2F303A;
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-// }
+.total-footer-background {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
 // .footer {
 //     display: flex;
