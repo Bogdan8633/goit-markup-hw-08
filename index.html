@@ -152,12 +152,20 @@
           <ul class="services__list">
             <li class="services__item">
               <div class="services__thumb">
-                <img
-                  src="./images/development.jpg"
-                  alt="Десктопные приложения"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/services/desktop-app-370/desktop-app-370.jpg    1x,
+                      ./images/desktop/services/desktop-app-370/desktop-app-370@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/desktop/services/desktop-app-370/desktop-app-370.jpg"
+                    alt="Десктопные приложения"
+                  />
+                </picture>
+
                 <div class="services__overlay">
                   <p class="services__name">Десктопные приложения</p>
                 </div>
@@ -165,12 +173,19 @@
             </li>
             <li class="services__item">
               <div class="services__thumb">
-                <img
-                  src="./images/filling.jpg"
-                  alt="Мобильные приложения"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/services/mobile-app-370/mobile-app-370.jpg    1x,
+                      ./images/desktop/services/mobile-app-370/mobile-app-370@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/desktop/services/mobile-app-370/mobile-app-370.jpg"
+                    alt="Мобильные приложения"
+                  />
+                </picture>
                 <div class="services__overlay">
                   <p class="services__name">Мобильные приложения</p>
                 </div>
@@ -178,12 +193,19 @@
             </li>
             <li class="services__item">
               <div class="services__thumb">
-                <img
-                  src="./images/design.jpg"
-                  alt="Дизайнерские решения"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/services/design-solutions-370/design-solutions-370.jpg    1x,
+                      ./images/desktop/services/design-solutions-370/design-solutions-370@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/desktop/services/design-solutions-370/design-solutions-370.jpg"
+                    alt="Дизайнерские решения"
+                  />
+                </picture>
                 <div class="services__overlay">
                   <p class="services__name">Дизайнерские решения</p>
                 </div>
