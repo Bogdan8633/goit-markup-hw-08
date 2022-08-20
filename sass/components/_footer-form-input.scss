@@ -14,7 +14,8 @@
 // }
 
 .footer-form__input-email {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   margin-bottom: 20px;
 
   padding: 15px 16px;
@@ -24,6 +25,10 @@
   border-radius: 4px;
 
   color: var(--light-color);
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 358px;
