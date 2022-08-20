@@ -2,10 +2,13 @@
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #2f303a;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 480px 400px;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../../images/mobile/hero/hero-480/hero-480.jpg);
@@ -22,6 +25,7 @@
 
 @media screen and (min-width: 768px) {
   .section.overlay {
+    background-size: 768px 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../images/tablet/hero/hero-768.jpg);
   }
@@ -39,6 +43,9 @@
 @media screen and (min-width: 1200px) {
   .section.overlay {
     min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: 1600px 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../images/desktop/hero/hero-1600.jpg);
   }
@@ -75,7 +82,7 @@
   width: 360px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 118px;
+  margin-top: 0px;
   margin-bottom: 30px;
 
   font-weight: var(--bolder-font);
@@ -88,7 +95,7 @@
   color: var(--light-color);
   @media screen and (min-width: 1200px) {
     width: 696px;
-    margin-top: 200px;
+    margin-top: 0px;
     font-size: 44px;
     line-height: 1.36;
   }
