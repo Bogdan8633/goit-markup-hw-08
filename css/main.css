@@ -316,7 +316,13 @@ p {
     order: 1;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 380px) {
+  .connection__item-second .connection__link {
+    font-size: 26px;
+    color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 767px) {
   .connection__item-second .connection__link {
     font-weight: var(--medium-font);
     font-size: 34px;
@@ -970,6 +976,7 @@ p {
 
 .backdrop {
   position: fixed;
+  z-index: 4;
   top: 0;
   left: 0;
   width: 100%;
@@ -987,7 +994,7 @@ p {
 
 .modal {
   position: absolute;
-  z-index: 7;
+  z-index: 5;
   top: 50%;
   left: 50%;
   width: 450px;

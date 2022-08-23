@@ -211,7 +211,11 @@
       order: 1;
     }
     .connection__link {
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 380px) {
+        font-size: 26px;
+        color: var(--accent-color);
+      }
+      @media screen and (min-width: 381px) and (max-width: 767px) {
         font-weight: var(--medium-font);
         font-size: 34px;
         line-height: 1.18;
